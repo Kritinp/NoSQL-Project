@@ -3,7 +3,6 @@ import flask
 import json
 import subprocess
 from flask import send_file
-import pandas as pd
 app = Flask(__name__)
 
 @app.route("/")
