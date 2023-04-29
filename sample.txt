@@ -1,0 +1,62 @@
+'Archit Sangal'	 2019012	'Archit.Sangal@iiitb.ac.in'	1
+'Gagan Agarwal'	 2019031	'Gagan.Agarwal@iiitb.ac.in'	1
+'Anumolu Tarun Kumar'	 2019011	'Anumolu.TarunKumar@iiitb.ac.in'	2
+'Suggula D V N P S M Manohar'	 2019025	'manohar.suggula@iiitb.ac.in'	2
+'Medicharla Mani Nandadeep'	 2019051	'Mani.Nandadeep@iiitb.ac.in'	2
+'Avantika Mudumbai'	 2019013	'Avantika.Mudumbai@iiitb.ac.in'	3
+'Channamsetty Sivani'	 2019020	'Channamsetty.Sivani@iiitb.ac.in'	3
+'R Prasannavenkatesh'	 2019063	'prasannavenkatesh.ramkumar@iiitb.ac.in'	3
+'Mallangi Siva Charan Reddy'	 2018513	'Siva.Charan@iiitb.ac.in'	4
+'MANDA SRINIVASA BHARGAVA'	 2020001	'Srinivasa.Bhargava@iiitb.ac.in'	4
+'Sathvik I Bhat'	 2020009	'Sathvik.Bhat@iiitb.ac.in'	4
+'Shivankar Pilligundla'	 2020016	'Shivankar.Pilligundla@iiitb.ac.in'	4
+'Vanshvardhan Singh'	 2020010	'Vanshvardhan.Singh@iiitb.ac.in'	5
+'Aakash Vardhan Chittineni'	 2020012	'Aakash.Chittineni@iiitb.ac.in'	5
+'Satvik Verma'	 2020046	'satvik.verma@iiitb.ac.in'	5
+'Rachit Agrawal'	 2020018	'Rachit.Agrawal@iiitb.ac.in'	6
+'ARYAN BHATT'	 2020020	'Aryan.Bhatt@iiitb.ac.in'	6
+'PAVAN THANAY MUTHYALA'	 2020024	'Pavan.Muthyala@iiitb.ac.in'	6
+'Bhoomika  A P'	PH2022001	'bhoomika.ap@iiitb.ac.in'	7
+'VYOM SHARMA'	 2020026	'Vyom.Sharma@iiitb.ac.in'	8
+'Kritin Potluru'	 2020027	'Kritin.Polturu@iiitb.ac.in'	8
+'SRIRAM MUNAGALA'	 2020030	'Sriram.Munagala@iiitb.ac.in'	8
+'Sarthak Harne'	 2020032	'Sarthak.Harne@iiitb.ac.in'	8
+'Jainav Sanghvi'	 2020098	'Jainav.Sanghvi@iiitb.ac.in'	9
+'Yash Koushik Kocherla'	 2020033	'Yash.Koushik@iiitb.ac.in'	9
+'BADAM TEJA VENKATA SUMANTH'	 2020072	'sumanth.badam@iiitb.ac.in'	9
+'ANAND PRAKASH'	 2020040	'Anand.Prakash@iiitb.ac.in'	10
+'Varad Badhe'	 2020048	'Varad.Badhe@iiitb.ac.in'	10
+'Heet DipakBhai Vasani'	 2020088	'Heet.Vasani@iiitb.ac.in'	10
+'Vaibhav Thapliyal'	 2020049	'Vaibhav.Thapliyal@iiitb.ac.in'	10
+'Mukul Gupta'	 2020083	'Mukul.Gupta@iiitb.ac.in'	11
+'Rudransh Dixit'	 2020056	'Rudransh.Dixit@iiitb.ac.in'	11
+'MANAS AGRAWAL'	 2020059	'Manas.Agrawal@iiitb.ac.in'	11
+'Hasanabbas Momin'	 2020066	'Hasanabbas.Momin@iiitb.ac.in'	12
+'Rishi Vakharia'	 2020067	'Rishi.Vakharia@iiitb.ac.in'	12
+'Chinmay Pankaj Parekh'	 2020069	'Chinmay.Parekh@iiitb.ac.in'	12
+'Prakhar Rastogi'	 2020052	'Prakhar.Rastogi@iiitb.ac.in'	13
+'DODDI NAGA TEJA JANAKI RAM'	 2020100	'NagaTeja.JanakiRam@iiitb.ac.in'	14
+'TEJDEEP GUTTA'	 2020102	'Tejdeep.Gutta@iiitb.ac.in'	14
+'Rakshit Sanjay Bang'	 2020105	'Rakshit.Bang@iiitb.ac.in'	14
+'Pratham Dandale'	 2020038	'Pratham.Dandale@iiitb.ac.in'	14
+'Chinthan Chandra'	 2020109	'Chinthan.Chandra@iiitb.ac.in'	15
+'Tangudu Vivek'	 2020110	'Vivek.Tangudu@iiitb.ac.in'	15
+'Kaushik Mishra'	 2020137	'Kaushik.Mishra@iiitb.ac.in'	15
+'SHASHANK SHEKHAR'	 2020112	'Shashank.Shekhar@iiitb.ac.in'	16
+'NARASINGU VENKATA SAI LIKHITH'	 2020118	'VenkataSai.Likhith@iiitb.ac.in'	16
+'Manan Patel'	 2020121	'Manan.Patel@iiitb.ac.in'	16
+'TAVVA AKHIL'	 2020124	'Akhil.Tavva@iiitb.ac.in'	17
+'Ayushmaan Singh'	 2020126	'Ayushmaan.Singh@iiitb.ac.in'	17
+'Ujjwal AGARWAL'	 2020128	'Ujjwal.Agarwal@iiitb.ac.in'	17
+'Deep Shashank Pani'	 2020129	'Deep.Shashank@iiitb.ac.in'	18
+'AMAR PRATAP SINGH'	 2020131	'AmarPratap.Singh@iiitb.ac.in'	18
+'LEELAVAMSIKRISHNA SANNIPALLI'	 2020111	'Leelavamsikrishna.Sannipalli@iiitb.ac.in'	18
+'Monjoy Narayan Choudhury'	 2020502	'Monjoy.Choudhury@iiitb.ac.in'	19
+'Hardik Khandelwal'	 2020509	'Hardik.Khandelwal@iiitb.ac.in'	19
+'Tejas Sharma'	 2020548	'Tejas.Sharma@iiitb.ac.in'	19
+'Amey Mahesh Tendulkar'	2022014	'Amey.Tendulkar@iiitb.ac.in'	20
+'Prashant Kumar'	2022079	'Prashant.Kumar@iiitb.ac.in'	20
+'Pallav Jain'	MT2022067	'Pallav.Jain@iiitb.ac.in'	20
+'Malay Agarwal'	MT2022059	'malay.agarwal16@gmail.com'	21
+'SAMI ULLAH NAIKOO'	2022099	'Sami.Naikoo@iiitb.ac.in'	21
+'Umair Ahmad Beig'	2022126	'Umair.Beig@iiitb.ac.in'	21
