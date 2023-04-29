@@ -12,3 +12,6 @@ $ pip install flask flask-cors
 Navigate into the cloned folder
 
 $ python3 app.py
+
+To stop the venv:
+$ deactivate
