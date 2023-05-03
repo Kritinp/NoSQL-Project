@@ -1,4 +1,6 @@
-from flask import Flask
+from pos_tagging import *
+
+from flask import Flask, request
 import flask
 import json
 import subprocess
@@ -27,6 +29,25 @@ def pigTest():
     print(result.stderr.decode("utf-8"))
 
     return send_file("output.txt/part-r-00000", as_attachment=True)
+
+@app.route('/query', methods=["GET"])
+def processQuery():
+    print("hi")
+    content_type = request.headers.get('Content-Type')
+    print(content_type)
+    if (content_type == 'application/json'):
+        json = request.json
+        # print(json)
+        if not ("query" in json and "input_text" in json):
+            return "invalid query"
+        
+        if json["query"] == "POS Tagging":
+            return pos_tagging(json["input_text"])
+        
+        return "query not recognized"
+    
+    else:
+        return 'Content-Type not supported!'
 
 if __name__ == "__main__":
     app.run("localhost", 6969)

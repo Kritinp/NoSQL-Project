@@ -1,13 +1,13 @@
-REGISTER 'lib/opennlp-tools-1.9.3.jar';
-REGISTER 'POSTaggerUDF.jar';
+REGISTER 'pos_tagging/lib/opennlp-tools-1.9.3.jar';
+REGISTER 'pos_tagging/POSTaggerUDF.jar';
 
 DEFINE POSTagger POSTaggerUDF();
 
 -- Load the input data
-data = LOAD 'input.txt' USING PigStorage(',') AS (id: int, text: chararray);
+data = LOAD 'pos_tagging/input.txt' AS (text: chararray);
 
 -- Apply the POS tagging UDF to the 'text' field
-tagged = FOREACH data GENERATE id, POSTagger(text) AS tagged_text;
+tagged = FOREACH data GENERATE POSTagger(text) AS tagged_text;
 
 -- Save the output data
-STORE tagged INTO 'output.txt' USING PigStorage('\t');
+STORE tagged INTO 'pos_tagging/output' USING PigStorage('\t');
