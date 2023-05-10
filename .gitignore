@@ -1,2 +1,5 @@
 venv/
 *.log
+*.jar
+*.pyc
+*.class

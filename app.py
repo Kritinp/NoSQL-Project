@@ -3,6 +3,7 @@ from sentiment import *
 from stopwords import *
 from wordfrequency import *
 from porter_stemmer import *
+from multiword_tokenexp import *
 
 from flask import Flask, request
 import flask
@@ -65,6 +66,9 @@ def processQuery():
         
         elif json["query"] == "STEMMING":
             return porter_stemmer(json["input_text"])
+        
+        elif json["query"] == "MULTIWORD_TOKENEXP":
+            return multiword_tokenexp(json["input_text"])
         
         return "query not recognized"
     
