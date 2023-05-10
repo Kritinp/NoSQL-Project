@@ -1,4 +1,8 @@
 from pos_tagging import *
+from sentiment import *
+from stopwords import *
+from wordfrequency import *
+from porter_stemmer import *
 
 from flask import Flask, request
 import flask
@@ -43,6 +47,24 @@ def processQuery():
         
         if json["query"] == "POS Tagging":
             return pos_tagging(json["input_text"])
+        
+        elif json["query"] == "SENTIMENT":
+            return sentiment(json["input_text"])
+        
+        elif json["query"] == "STOPWORDS":
+            return stopwords(json["input_text"])
+        
+        elif json["query"] == "WORDFREQUENCY":
+            return wordfrequency(json["input_text"])
+        
+        elif json["query"] == "SENTIMENT":
+            return sentiment(json["input_text"])
+        
+        elif json["query"] == "STOPWORDS":
+            return stopwords(json["input_text"])
+        
+        elif json["query"] == "STEMMING":
+            return porter_stemmer(json["input_text"])
         
         return "query not recognized"
     

@@ -16,26 +16,26 @@ import org.apache.pig.data.Tuple;
 
 
 public class NlpEstimatingSentiment extends EvalFunc<String> {
-    static StanfordCoreNLP pipeline;
-    public static void init() 
-    {
-        Properties props = new Properties();
-        props.setProperty("annotators", "tokenize, ssplit, parse, sentiment");
-        pipeline = new StanfordCoreNLP(props);
-    }
-    public static void estimatingSentiment(String text)
-    {
-   int sentimentInt;
-      String sentimentName; 
-      Annotation annotation = pipeline.process(text);
-      for(CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class))
-      {
-         Tree tree = sentence.get(SentimentAnnotatedTree.class);
-        sentimentInt = RNNCoreAnnotations.getPredictedClass(tree); 
-                sentimentName = sentence.get(SentimentCoreAnnotations.SentimentClass.class);
-        System.out.println(sentimentName + "\t" + sentimentInt + "\t" + sentence);
-      }
-     }
+//     static StanfordCoreNLP pipeline;
+//     public static void init() 
+//     {
+//         Properties props = new Properties();
+//         props.setProperty("annotators", "tokenize, ssplit, parse, sentiment");
+//         pipeline = new StanfordCoreNLP(props);
+//     }
+//     public static void estimatingSentiment(String text)
+//     {
+//    int sentimentInt;
+//       String sentimentName; 
+//       Annotation annotation = pipeline.process(text);
+//       for(CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class))
+//       {
+//          Tree tree = sentence.get(SentimentAnnotatedTree.class);
+//         sentimentInt = RNNCoreAnnotations.getPredictedClass(tree); 
+//                 sentimentName = sentence.get(SentimentCoreAnnotations.SentimentClass.class);
+//         System.out.println(sentimentName + "\t" + sentimentInt + "\t" + sentence);
+//       }
+//      }
 
      public String exec(Tuple input) throws IOException {
         if (input == null || input.size() == 0) {

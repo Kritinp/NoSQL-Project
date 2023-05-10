@@ -1,5 +1,5 @@
-1. Create class file: $  javac -cp .:lib/* -d build NlpEstimatingSentiment.java
+1. Create class file: $  javac -cp .:lib/* -d build RemoveStopwordsUDF.java
 
-2. Complile class file into jar: $ jar cvfm nlpestimatingsentiment.jar MANIFEST.MF -C build .
+2. Complile class file into jar: $ jar cvfm removestopwordsudf.jar MANIFEST.MF -C build .
 
 3. run the script.pig file on the grunt shell
