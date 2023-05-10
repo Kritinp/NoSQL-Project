@@ -1,4 +1,5 @@
 from pos_tagging import *
+from sentence_splitter import sent_split
 from sentiment import *
 from stopwords import *
 from wordfrequency import *
@@ -69,6 +70,9 @@ def processQuery():
         
         elif json["query"] == "MULTIWORD_TOKENEXP":
             return multiword_tokenexp(json["input_text"])
+        
+        elif json["query"] == "SENTENCE_SPLIT":
+            return sent_split(json["input_text"])
         
         return "query not recognized"
     
