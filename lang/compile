@@ -1,0 +1,3 @@
+javac -d bin -cp lib/*.jar src/com/example/LanguageDetection.java
+jar cvfm LanguageDetection.jar Manifest.txt -C bin .
+java -cp LanguageDetection.jar:lib/langdetect-1.1-20120112.jar:lib/jsonic-1.1.2.jar com.example.LanguageDetection
