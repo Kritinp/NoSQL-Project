@@ -7,6 +7,7 @@ from stopwords import *
 from wordfrequency import *
 from porter_stemmer import *
 from multiword_tokenexp import *
+from language_detection import *
 
 from flask import Flask, request
 import flask
@@ -81,6 +82,9 @@ def processQuery():
         
         elif json["query"] == "NER":
             return namedentityrecognition(json["input_text"])
+        
+        elif json["query"] == "LANGUAGE_DETECTION":
+            return language_detection(json["input_text"])
         
         return "query not recognized"
     
