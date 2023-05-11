@@ -3,3 +3,9 @@ venv/
 *.jar
 *.pyc
 *.class
+*.crc
+lib/
+output/
+build/
+input.txt
+.vscode
