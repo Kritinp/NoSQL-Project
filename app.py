@@ -1,3 +1,4 @@
+from lemmatize import *
 from pos_tagging import *
 from sentence_splitter import sent_split
 from sentiment import *
@@ -73,6 +74,9 @@ def processQuery():
         
         elif json["query"] == "SENTENCE_SPLIT":
             return sent_split(json["input_text"])
+
+        elif json["query"] == "LEMMATIZE":
+            return lemmatize(json["input_text"])
         
         return "query not recognized"
     

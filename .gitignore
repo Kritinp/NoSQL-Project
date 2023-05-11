@@ -3,3 +3,4 @@ venv/
 *.jar
 *.pyc
 *.class
+*.crc
