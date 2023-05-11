@@ -1,4 +1,5 @@
 from lemmatize import *
+from namedentityrecognition import *
 from pos_tagging import *
 from sentence_splitter import sent_split
 from sentiment import *
@@ -77,6 +78,9 @@ def processQuery():
 
         elif json["query"] == "LEMMATIZE":
             return lemmatize(json["input_text"])
+        
+        elif json["query"] == "NER":
+            return namedentityrecognition(json["input_text"])
         
         return "query not recognized"
     
