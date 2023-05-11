@@ -1,12 +1,15 @@
-REGISTER 'LanguageDetection.jar';
-REGISTER 'lib/langdetect-1.1-20120112.jar';
-REGISTER 'lib/jsonic-1.1.2.jar com.example.LanguageDetection';
+REGISTER 'language_detection/lib/langdetect-1.1-20120112.jar';
+REGISTER 'language_detection/lib/jsonic-1.1.2.jar';
+REGISTER 'language_detection/LanguageDetection.jar';
 
--- Load your input data
-input_data = LOAD 'input.txt' AS (document: chararray);
 
--- Apply the UDF to calculate word frequencies
-lang = FOREACH input_data GENERATE LanguageDetection(document) AS language;
+DEFINE LanguageDetection com.example.LanguageDetection();
 
--- Dump the result
-STORE lang INTO 'wordfrequency/output' USING PigStorage('\t');
+-- Load the input data
+data = LOAD 'language_detection/input.txt' AS (text: chararray);
+
+-- Apply the POS tagging UDF to the 'text' field
+detected = FOREACH data GENERATE LanguageDetection(text) AS language;
+
+-- Save the output data
+STORE detected INTO 'language_detection/output' USING PigStorage('\t');

@@ -1,3 +1,0 @@
-Manifest-Version: 1.0
-Class-Path: lib/langdetect-1.1-20120112.jar
-Main-Class: LanguageDetection

@@ -1,3 +1,2 @@
-javac -cp .:lib/*.jar -d bin LanguageDetection.java
-jar cvfm LanguageDetection.jar Manifest.txt -C bin .
-java -cp LanguageDetection.jar:lib/langdetect-1.1-20120112.jar:lib/jsonic-1.1.2.jar com.example.LanguageDetection
+javac -d bin -cp lib/*: src/com/example/LanguageDetection.java
+jar cvfm LanguageDetection.jar Manifest.txt -C bin . -C lib .
