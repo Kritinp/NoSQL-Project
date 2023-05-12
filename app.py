@@ -52,6 +52,8 @@ def processQuery():
         
         if json["query"] == "POS Tagging":
             res= pos_tagging(json["input_text"])
+            # print(json["input_text"])
+            # return "aaaa"
             return jsonify({"data":res})
         elif json["query"] == "SENTIMENT":
             res= sentiment(json["input_text"])    

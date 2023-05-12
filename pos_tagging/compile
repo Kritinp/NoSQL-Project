@@ -1,0 +1,2 @@
+javac -cp .:lib/* -d build src/main/java/POSTaggerUDF.java
+jar cvfm POSTaggerUDF.jar src/main/META-INF/MANIFEST.MF -C build .
