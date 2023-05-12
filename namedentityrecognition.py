@@ -38,6 +38,7 @@ def namedentityrecognition(input_text):
 	output_file = glob.glob(output_directory + "part*")
 	print(output_file)
 	if len(output_file) > 0:
-		return send_file(output_file[0], as_attachment=True)
-	
+		with open(output_file[0], 'r') as file:
+			file_content = file.read()
+		return file_content	
 	return "error"

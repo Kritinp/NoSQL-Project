@@ -9,13 +9,13 @@ from porter_stemmer import *
 from multiword_tokenexp import *
 from language_detection import *
 
-from flask import Flask, request
 import flask
-import json
 import subprocess
-from flask import send_file
+from flask import send_file, Flask, request, jsonify, make_response
+from flask_cors import CORS
+import json as myjson
 app = Flask(__name__)
-
+cors = CORS(app)
 @app.route("/")
 def hello():
     return "Hello, World!"
@@ -39,7 +39,7 @@ def pigTest():
 
     return send_file("output.txt/part-r-00000", as_attachment=True)
 
-@app.route('/query', methods=["GET"])
+@app.route('/query', methods=["POST"])
 def processQuery():
     print("hi")
     content_type = request.headers.get('Content-Type')
@@ -48,44 +48,38 @@ def processQuery():
         json = request.json
         # print(json)
         if not ("query" in json and "input_text" in json):
-            return "invalid query"
+            return myjson.dumps({"data":"Invalid Query"})
         
         if json["query"] == "POS Tagging":
-            return pos_tagging(json["input_text"])
-        
+            res= pos_tagging(json["input_text"])
+            return jsonify({"data":res})
         elif json["query"] == "SENTIMENT":
-            return sentiment(json["input_text"])
-        
+            res= sentiment(json["input_text"])    
+            return jsonify({"data": res})
         elif json["query"] == "STOPWORDS":
-            return stopwords(json["input_text"])
-        
+            res= stopwords(json["input_text"])
+            return jsonify({"data":res})
         elif json["query"] == "WORDFREQUENCY":
-            return wordfrequency(json["input_text"])
-        
-        elif json["query"] == "SENTIMENT":
-            return sentiment(json["input_text"])
-        
-        elif json["query"] == "STOPWORDS":
-            return stopwords(json["input_text"])
-        
+            res= wordfrequency(json["input_text"])
+            return jsonify({"data":res})
         elif json["query"] == "STEMMING":
-            return porter_stemmer(json["input_text"])
-        
+            res= porter_stemmer(json["input_text"])
+            return jsonify({"data":res})
         elif json["query"] == "MULTIWORD_TOKENEXP":
-            return multiword_tokenexp(json["input_text"])
-        
+            res= multiword_tokenexp(json["input_text"])
+            return jsonify({"data":res})
         elif json["query"] == "SENTENCE_SPLIT":
-            return sent_split(json["input_text"])
-
+            res= sent_split(json["input_text"])
+            return jsonify({"data":res})
         elif json["query"] == "LEMMATIZE":
-            return lemmatize(json["input_text"])
-        
+            res= lemmatize(json["input_text"])
+            return jsonify({"data":res})
         elif json["query"] == "NER":
-            return namedentityrecognition(json["input_text"])
-        
+            res= namedentityrecognition(json["input_text"])
+            return jsonify({"data":res})
         elif json["query"] == "LANGUAGE_DETECTION":
-            return language_detection(json["input_text"])
-        
+            res= language_detection(json["input_text"])
+            return jsonify({"data":res})
         return "query not recognized"
     
     else:
