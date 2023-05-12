@@ -19,7 +19,7 @@ public class POSTaggerUDF extends EvalFunc<String> {
     // private static final Tokenizer TOKENIZER = SimpleTokenizer.INSTANCE;
     // private static final POSModel MODEL;
 
-    POSModel model = new POSModelLoader().load(new File("/home/avi/Desktop/nosql/src/pos_tagging/lib/opennlp-en-ud-ewt-pos-1.0-1.9.3.bin")); //Edit path to the pre-trained model file
+    POSModel model = new POSModelLoader().load(new File("./pos_tagging/lib/opennlp-en-ud-ewt-pos-1.0-1.9.3.bin")); //Edit path to the pre-trained model file
     POSTaggerME tagger = new POSTaggerME(model);
     SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
 
