@@ -34,3 +34,6 @@ $ bash compile
 ```
 
 This jar is then used to register a user defined function in pig to process some input text.
+
+# User Interface
+Refer to [this repository](https://github.com/avantikaaa/nosql-frontend "User interface") to set up the user interface for this pipeline
