@@ -1,3 +1,6 @@
+# About the project:
+This is a robust and a user-friendly text processing pipeline which enables users to decide which text processing operation they want to perform and in what order they want to perform the operations. The operations include but are not limited to parts of speech tagging, sentiment analysis and stop words removal for English text and language detection for about 50 languages. This is done with the help of "user-defined-functions" in Apache Pig.
+
 # For first time users:
 After cloning, navigate out of the "Project" folder (so that the upcoming venv folder isnt made inside the project)
 
